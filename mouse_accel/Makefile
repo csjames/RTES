@@ -30,7 +30,7 @@ AR = $(TOOLCHAIN)ar
 
 # application specific
 INSTRUCTION_MODE = thumb
-TARGET = billnicky
+TARGET = mouse
 TARGET_EXT = elf
 LD_SCRIPT = ../cmsis/$(FOLDER_NAME)/$(LINKER_NAME).ld
 
@@ -39,11 +39,11 @@ CC_SYMBOLS = -DTOOLCHAIN_GCC_ARM -DNDEBUG
 LIBS = -lm -lgcc -lc -lnosys
 
 # directories
-INC_DIRS = ../cmsis ../cmsis/$(FOLDER_NAME) . ../libs/FreeRTOS/include ../libs/FreeRTOS/config/KL46Z4/gcc ../libs/FreeRTOS/port/gcc ../libs/headers
+INC_DIRS = ../cmsis ../cmsis/$(FOLDER_NAME) . ../libs/FreeRTOS/include ../libs/FreeRTOS/config/KL46Z4/gcc ../libs/FreeRTOS/port/gcc ../libs/MKL46Z/headers
 # app headers directories (remove comment and add more files)
 #INC_DIRS +=
 
-SRC_DIRS = ../cmsis ../cmsis/$(FOLDER_NAME) . ../libs/FreeRTOS/src ../libs/FreeRTOS/port/gcc ../libs/src
+SRC_DIRS = ../cmsis ../cmsis/$(FOLDER_NAME) . ../libs/FreeRTOS/src ../libs/FreeRTOS/port/gcc ../libs/src ../libs/MKL46Z/source
 # app source directories (remove comment and add more files)
 #SRC_DIRS +=
 
