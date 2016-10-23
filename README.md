@@ -1,7 +1,7 @@
 # RTES
 Woooo
 
-# Place this in the demo_apps folder of the KSDK (examples/frdmkl46z/demo_apps/helo_world
+# Place this in the demo_apps folder of the KSDK (examples/frdmkl46z/demo_apps/hello_world)
 
 ## Install armgcc and export following path variabnles 
 export PATH=$PATH:/path/to/gcc-arm-none-eabi-5_4-2016q3/bin
