@@ -958,7 +958,7 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
  .FlashConfig   0x00000400       0x10 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/devices/MKL46Z4/startup/gcc/startup_MKL46Z4.S.obj
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x3054
+.text           0x00000410     0x2ff8
                 0x00000410                . = ALIGN (0x4)
  *(.text)
  .text          0x00000410       0x60 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
@@ -1060,460 +1060,464 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
  .text.scrollmodeCheck
                 0x00000b10       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x00000b10                scrollmodeCheck
+ .text.handOnCheck
+                0x00000b78       0x38 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x00000b78                handOnCheck
  .text.mouseDataTask
-                0x00000b78      0x258 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x00000bb0      0x1dc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
  .text.startup.main
-                0x00000dd0       0xd0 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x00000dd0                main
+                0x00000d8c       0xc4 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x00000d8c                main
  .text.pxPortInitialiseStack
-                0x00000ea0       0x20 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000ea0                pxPortInitialiseStack
+                0x00000e50       0x20 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000e50                pxPortInitialiseStack
  .text.vPortInitTickTimer
-                0x00000ec0       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000ec0                vPortInitTickTimer
+                0x00000e70       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000e70                vPortInitTickTimer
  .text.vPortYieldFromISR
-                0x00000f00       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000f00                vPortYieldFromISR
+                0x00000eb0       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000eb0                vPortYieldFromISR
  .text.vPortStartFirstTask
-                0x00000f18       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000f18                vPortStartFirstTask
+                0x00000ec8       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000ec8                vPortStartFirstTask
  .text.xPortStartScheduler
-                0x00000f30       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000f30                xPortStartScheduler
+                0x00000ee0       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000ee0                xPortStartScheduler
  .text.SVC_Handler
-                0x00000f70       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000f70                SVC_Handler
+                0x00000f20       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000f20                SVC_Handler
  .text.PendSV_Handler
-                0x00000f98       0x44 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000f98                PendSV_Handler
+                0x00000f48       0x44 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000f48                PendSV_Handler
  .text.ulPortSetInterruptMask
-                0x00000fdc        0xa CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000fdc                ulPortSetInterruptMask
- *fill*         0x00000fe6        0x2 
+                0x00000f8c        0xa CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000f8c                ulPortSetInterruptMask
+ *fill*         0x00000f96        0x2 
  .text.prvTaskExitError
-                0x00000fe8       0x1c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00000fe8                prvTaskExitError
+                0x00000f98       0x1c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000f98                prvTaskExitError
  .text.vPortEnterCritical
-                0x00001004       0x1c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00001004                vPortEnterCritical
+                0x00000fb4       0x1c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000fb4                vPortEnterCritical
  .text.vPortClearInterruptMask
-                0x00001020        0x6 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00001020                vPortClearInterruptMask
- *fill*         0x00001026        0x2 
+                0x00000fd0        0x6 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000fd0                vPortClearInterruptMask
+ *fill*         0x00000fd6        0x2 
  .text.vPortExitCritical
-                0x00001028       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00001028                vPortExitCritical
+                0x00000fd8       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000fd8                vPortExitCritical
  .text.SysTick_Handler
-                0x00001040       0x1a CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
-                0x00001040                SysTick_Handler
+                0x00000ff0       0x1a CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/port/gcc/port.c.obj
+                0x00000ff0                SysTick_Handler
  .text.pvPortMalloc
-                0x0000105a       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/heap_3.c.obj
-                0x0000105a                pvPortMalloc
+                0x0000100a       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/heap_3.c.obj
+                0x0000100a                pvPortMalloc
  .text.vPortFree
-                0x00001072       0x16 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/heap_3.c.obj
-                0x00001072                vPortFree
+                0x00001022       0x16 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/heap_3.c.obj
+                0x00001022                vPortFree
  .text.vListInitialise
-                0x00001088       0x16 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
-                0x00001088                vListInitialise
+                0x00001038       0x16 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
+                0x00001038                vListInitialise
  .text.vListInitialiseItem
-                0x0000109e        0x6 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
-                0x0000109e                vListInitialiseItem
+                0x0000104e        0x6 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
+                0x0000104e                vListInitialiseItem
  .text.vListInsertEnd
-                0x000010a4       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
-                0x000010a4                vListInsertEnd
+                0x00001054       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
+                0x00001054                vListInsertEnd
  .text.vListInsert
-                0x000010bc       0x30 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
-                0x000010bc                vListInsert
+                0x0000106c       0x30 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
+                0x0000106c                vListInsert
  .text.uxListRemove
-                0x000010ec       0x20 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
-                0x000010ec                uxListRemove
+                0x0000109c       0x20 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/list.c.obj
+                0x0000109c                uxListRemove
  .text.prvCopyDataToQueue
-                0x0000110c       0x72 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x000010bc       0x72 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
  .text.unlikely.prvCopyDataFromQueue
-                0x0000117e       0x24 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x0000112e       0x24 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
  .text.prvUnlockQueue
-                0x000011a2       0x6a CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x00001152       0x6a CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
  .text.xQueueGenericReset
-                0x0000120c       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
-                0x0000120c                xQueueGenericReset
+                0x000011bc       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x000011bc                xQueueGenericReset
  .text.xQueueGenericCreate
-                0x00001274       0x4c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
-                0x00001274                xQueueGenericCreate
+                0x00001224       0x4c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x00001224                xQueueGenericCreate
  .text.xQueueGenericSend
-                0x000012c0      0x124 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
-                0x000012c0                xQueueGenericSend
+                0x00001270      0x124 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x00001270                xQueueGenericSend
  .text.xQueueGenericSendFromISR
-                0x000013e4       0x88 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
-                0x000013e4                xQueueGenericSendFromISR
+                0x00001394       0x88 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x00001394                xQueueGenericSendFromISR
  .text.xQueueGenericReceive
-                0x0000146c      0x146 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
-                0x0000146c                xQueueGenericReceive
+                0x0000141c      0x146 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x0000141c                xQueueGenericReceive
  .text.vQueueWaitForMessageRestricted
-                0x000015b2       0x3a CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
-                0x000015b2                vQueueWaitForMessageRestricted
+                0x00001562       0x3a CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/queue.c.obj
+                0x00001562                vQueueWaitForMessageRestricted
  .text.prvResetNextTaskUnblockTime
-                0x000015ec       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x0000159c       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
  .text.prvAddCurrentTaskToDelayedList
-                0x00001614       0x4c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x000015c4       0x4c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
  .text.xTaskGenericCreate
-                0x00001660      0x1ac CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001660                xTaskGenericCreate
+                0x00001610      0x1ac CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001610                xTaskGenericCreate
  .text.vTaskStartScheduler
-                0x0000180c       0x5c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x0000180c                vTaskStartScheduler
+                0x000017bc       0x5c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x000017bc                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x00001868       0x10 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001868                vTaskSuspendAll
+                0x00001818       0x10 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001818                vTaskSuspendAll
  .text.xTaskGetTickCount
-                0x00001878       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001878                xTaskGetTickCount
+                0x00001828       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001828                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x00001890      0x104 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001890                xTaskIncrementTick
+                0x00001840      0x104 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001840                xTaskIncrementTick
  .text.xTaskResumeAll
-                0x00001994       0xd0 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001994                xTaskResumeAll
+                0x00001944       0xd0 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001944                xTaskResumeAll
  .text.vTaskDelayUntil
-                0x00001a64       0x7c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001a64                vTaskDelayUntil
+                0x00001a14       0x7c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001a14                vTaskDelayUntil
  .text.prvIdleTask
-                0x00001ae0       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001a90       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
  .text.vTaskSwitchContext
-                0x00001b48       0x78 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001b48                vTaskSwitchContext
+                0x00001af8       0x78 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001af8                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x00001bc0       0x48 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001bc0                vTaskPlaceOnEventList
+                0x00001b70       0x48 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001b70                vTaskPlaceOnEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x00001c08       0x34 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001c08                vTaskPlaceOnEventListRestricted
+                0x00001bb8       0x34 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001bb8                vTaskPlaceOnEventListRestricted
  .text.xTaskRemoveFromEventList
-                0x00001c3c       0x78 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001c3c                xTaskRemoveFromEventList
+                0x00001bec       0x78 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001bec                xTaskRemoveFromEventList
  .text.vTaskSetTimeOutState
-                0x00001cb4       0x24 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001cb4                vTaskSetTimeOutState
+                0x00001c64       0x24 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001c64                vTaskSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x00001cd8       0x64 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001cd8                xTaskCheckForTimeOut
+                0x00001c88       0x64 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001c88                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x00001d3c        0xc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001d3c                vTaskMissedYield
+                0x00001cec        0xc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001cec                vTaskMissedYield
  .text.xTaskGetSchedulerState
-                0x00001d48       0x20 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001d48                xTaskGetSchedulerState
+                0x00001cf8       0x20 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001cf8                xTaskGetSchedulerState
  .text.vTaskPriorityInherit
-                0x00001d68       0x6c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001d68                vTaskPriorityInherit
+                0x00001d18       0x6c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001d18                vTaskPriorityInherit
  .text.xTaskPriorityDisinherit
-                0x00001dd4       0x5c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001dd4                xTaskPriorityDisinherit
+                0x00001d84       0x5c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001d84                xTaskPriorityDisinherit
  .text.pvTaskIncrementMutexHeldCount
-                0x00001e30       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
-                0x00001e30                pvTaskIncrementMutexHeldCount
+                0x00001de0       0x18 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x00001de0                pvTaskIncrementMutexHeldCount
  .text.prvCheckForValidListAndQueue
-                0x00001e48       0x58 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x00001df8       0x58 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
  .text.prvInsertTimerInActiveList
-                0x00001ea0       0x3c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x00001e50       0x3c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
  .text.xTimerCreateTimerTask
-                0x00001edc       0x44 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
-                0x00001edc                xTimerCreateTimerTask
+                0x00001e8c       0x44 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x00001e8c                xTimerCreateTimerTask
  .text.xTimerGenericCommand
-                0x00001f20       0x48 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
-                0x00001f20                xTimerGenericCommand
+                0x00001ed0       0x48 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x00001ed0                xTimerGenericCommand
  .text.prvSwitchTimerLists
-                0x00001f68       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x00001f18       0x68 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
  .text.prvTimerTask
-                0x00001fd0      0x188 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x00001f80      0x188 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
  .text.LPTMR0_IRQHandler
-                0x00002158        0xa CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/fsl_lptmr_irq.c.obj
-                0x00002158                LPTMR0_IRQHandler
- *fill*         0x00002162        0x2 
+                0x00002108        0xa CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/fsl_lptmr_irq.c.obj
+                0x00002108                LPTMR0_IRQHandler
+ *fill*         0x00002112        0x2 
  .text.hardware_init
-                0x00002164       0xa4 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/hardware_init.c.obj
-                0x00002164                hardware_init
+                0x00002114       0xa4 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/hardware_init.c.obj
+                0x00002114                hardware_init
  .text.configure_lpsci_pins
-                0x00002208       0x1c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/pin_mux.c.obj
-                0x00002208                configure_lpsci_pins
+                0x000021b8       0x1c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/pin_mux.c.obj
+                0x000021b8                configure_lpsci_pins
  .text.BOARD_InitOsc0
-                0x00002224       0x2c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
-                0x00002224                BOARD_InitOsc0
+                0x000021d4       0x2c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
+                0x000021d4                BOARD_InitOsc0
  .text.BOARD_ClockInit
-                0x00002250       0x50 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
-                0x00002250                BOARD_ClockInit
+                0x00002200       0x50 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
+                0x00002200                BOARD_ClockInit
  .text.dbg_uart_init
-                0x000022a0       0x24 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
-                0x000022a0                dbg_uart_init
+                0x00002250       0x24 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
+                0x00002250                dbg_uart_init
  .text.debug_putc
-                0x000022c4       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
+                0x00002274       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
  .text.DbgConsole_Init
-                0x000022ec      0x104 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
-                0x000022ec                DbgConsole_Init
+                0x0000229c      0x104 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
+                0x0000229c                DbgConsole_Init
  .text.debug_printf
-                0x000023f0       0x38 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
-                0x000023f0                debug_printf
+                0x000023a0       0x38 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
+                0x000023a0                debug_printf
  .text.mknumstr
-                0x00002428       0x84 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/print_scan.c.obj
+                0x000023d8       0x84 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/print_scan.c.obj
  .text.fput_pad.isra.0
-                0x000024ac       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/print_scan.c.obj
+                0x0000245c       0x28 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/print_scan.c.obj
  .text._doprint
-                0x000024d4      0x3dc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/print_scan.c.obj
-                0x000024d4                _doprint
+                0x00002484      0x3dc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/print_scan.c.obj
+                0x00002484                _doprint
  .text.SystemInit
-                0x000028b0       0x10 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/devices/MKL46Z4/startup/system_MKL46Z4.c.obj
-                0x000028b0                SystemInit
+                0x00002860       0x10 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/devices/MKL46Z4/startup/system_MKL46Z4.c.obj
+                0x00002860                SystemInit
  .text.init_data_bss
-                0x000028c0       0x7c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/devices/startup.c.obj
-                0x000028c0                init_data_bss
+                0x00002870       0x7c CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/devices/startup.c.obj
+                0x00002870                init_data_bss
  .text.CLOCK_SYS_BootToPee
-                0x0000293c       0x84 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
-                0x0000293c                CLOCK_SYS_BootToPee
+                0x000028ec       0x84 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
+                0x000028ec                CLOCK_SYS_BootToPee
  .text.CLOCK_SYS_SetOscerConfigration
-                0x000029c0       0x28 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
-                0x000029c0                CLOCK_SYS_SetOscerConfigration
+                0x00002970       0x28 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
+                0x00002970                CLOCK_SYS_SetOscerConfigration
  .text.CLOCK_SYS_OscInit
-                0x000029e8       0x7c ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
-                0x000029e8                CLOCK_SYS_OscInit
+                0x00002998       0x7c ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
+                0x00002998                CLOCK_SYS_OscInit
  .text.SIM_HAL_EnableClock.constprop.8
-                0x00002a64       0x28 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002a14       0x28 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
  .text.CLOCK_SYS_SetSimConfigration
-                0x00002a8c       0x38 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002a8c                CLOCK_SYS_SetSimConfigration
+                0x00002a3c       0x38 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002a3c                CLOCK_SYS_SetSimConfigration
  .text.CLOCK_SYS_GetSystemClockFreq
-                0x00002ac4       0x20 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002ac4                CLOCK_SYS_GetSystemClockFreq
+                0x00002a74       0x20 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002a74                CLOCK_SYS_GetSystemClockFreq
  .text.CLOCK_SYS_GetFlashClockFreq
-                0x00002ae4       0x18 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002ae4                CLOCK_SYS_GetFlashClockFreq
+                0x00002a94       0x18 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002a94                CLOCK_SYS_GetFlashClockFreq
  .text.CLOCK_SYS_GetPllFllClockFreq
-                0x00002afc       0x30 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002afc                CLOCK_SYS_GetPllFllClockFreq
+                0x00002aac       0x30 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002aac                CLOCK_SYS_GetPllFllClockFreq
  .text.CLOCK_SYS_GetOsc0ExternalRefClockFreq
-                0x00002b2c       0x28 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002b2c                CLOCK_SYS_GetOsc0ExternalRefClockFreq
+                0x00002adc       0x28 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002adc                CLOCK_SYS_GetOsc0ExternalRefClockFreq
  .text.CLOCK_SYS_GetLpsciFreq
-                0x00002b54       0x34 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002b54                CLOCK_SYS_GetLpsciFreq
+                0x00002b04       0x34 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002b04                CLOCK_SYS_GetLpsciFreq
  .text.CLOCK_SYS_GetUartFreq
-                0x00002b88       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002b88                CLOCK_SYS_GetUartFreq
+                0x00002b38       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002b38                CLOCK_SYS_GetUartFreq
  .text.CLOCK_SYS_EnablePortClock
-                0x00002b98       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002b98                CLOCK_SYS_EnablePortClock
+                0x00002b48       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002b48                CLOCK_SYS_EnablePortClock
  .text.CLOCK_SYS_EnableLpsciClock
-                0x00002ba8       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002ba8                CLOCK_SYS_EnableLpsciClock
+                0x00002b58       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002b58                CLOCK_SYS_EnableLpsciClock
  .text.CLOCK_SYS_EnableUartClock
-                0x00002bb8       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
-                0x00002bb8                CLOCK_SYS_EnableUartClock
+                0x00002b68       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x00002b68                CLOCK_SYS_EnableUartClock
  .text.LPSCI_HAL_SetBaudRate
-                0x00002bc8       0xba ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
-                0x00002bc8                LPSCI_HAL_SetBaudRate
+                0x00002b78       0xba ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
+                0x00002b78                LPSCI_HAL_SetBaudRate
  .text.LPSCI_HAL_SetParityMode
-                0x00002c82       0x1e ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
-                0x00002c82                LPSCI_HAL_SetParityMode
+                0x00002c32       0x1e ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
+                0x00002c32                LPSCI_HAL_SetParityMode
  .text.LPSCI_HAL_SendDataPolling
-                0x00002ca0       0x20 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
-                0x00002ca0                LPSCI_HAL_SendDataPolling
+                0x00002c50       0x20 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
+                0x00002c50                LPSCI_HAL_SendDataPolling
  .text.LPSCI_HAL_ReceiveDataPolling
-                0x00002cc0       0x36 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
-                0x00002cc0                LPSCI_HAL_ReceiveDataPolling
- *fill*         0x00002cf6        0x2 
+                0x00002c70       0x36 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lpsci_hal.c.obj)
+                0x00002c70                LPSCI_HAL_ReceiveDataPolling
+ *fill*         0x00002ca6        0x2 
  .text.LPTMR_DRV_IRQHandler
-                0x00002cf8       0x2c ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lptmr_driver.c.obj)
-                0x00002cf8                LPTMR_DRV_IRQHandler
+                0x00002ca8       0x2c ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lptmr_driver.c.obj)
+                0x00002ca8                LPTMR_DRV_IRQHandler
  .text.CLOCK_HAL_PrepareOsc
-                0x00002d24       0x1e ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002d24                CLOCK_HAL_PrepareOsc
+                0x00002cd4       0x1e ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002cd4                CLOCK_HAL_PrepareOsc
  .text.CLOCK_HAL_TestFllExternalRefFreq
-                0x00002d42       0x36 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002d42                CLOCK_HAL_TestFllExternalRefFreq
+                0x00002cf2       0x36 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002cf2                CLOCK_HAL_TestFllExternalRefFreq
  .text.CLOCK_HAL_GetFllRefClk
-                0x00002d78       0x44 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002d78                CLOCK_HAL_GetFllRefClk
+                0x00002d28       0x44 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002d28                CLOCK_HAL_GetFllRefClk
  .text.CLOCK_HAL_TestFllFreq
-                0x00002dbc       0x38 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002dbc                CLOCK_HAL_TestFllFreq
+                0x00002d6c       0x38 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002d6c                CLOCK_HAL_TestFllFreq
  .text.CLOCK_HAL_GetFllClk
-                0x00002df4       0x40 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002df4                CLOCK_HAL_GetFllClk
+                0x00002da4       0x40 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002da4                CLOCK_HAL_GetFllClk
  .text.CLOCK_HAL_UpdateFastClkInternalRefDiv
-                0x00002e34       0x60 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002e34                CLOCK_HAL_UpdateFastClkInternalRefDiv
+                0x00002de4       0x60 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002de4                CLOCK_HAL_UpdateFastClkInternalRefDiv
  .text.CLOCK_HAL_UpdateInternalRefClk
-                0x00002e94       0x52 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002e94                CLOCK_HAL_UpdateInternalRefClk
- *fill*         0x00002ee6        0x2 
+                0x00002e44       0x52 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002e44                CLOCK_HAL_UpdateInternalRefClk
+ *fill*         0x00002e96        0x2 
  .text.CLOCK_HAL_GetPll0Clk
-                0x00002ee8       0x48 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002ee8                CLOCK_HAL_GetPll0Clk
+                0x00002e98       0x48 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002e98                CLOCK_HAL_GetPll0Clk
  .text.CLOCK_HAL_GetInternalRefClk
-                0x00002f30       0x40 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002f30                CLOCK_HAL_GetInternalRefClk
+                0x00002ee0       0x40 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002ee0                CLOCK_HAL_GetInternalRefClk
  .text.CLOCK_HAL_GetOutClk
-                0x00002f70       0x44 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002f70                CLOCK_HAL_GetOutClk
+                0x00002f20       0x44 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002f20                CLOCK_HAL_GetOutClk
  .text.CLOCK_HAL_SetOsc0Mode
-                0x00002fb4       0x24 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
-                0x00002fb4                CLOCK_HAL_SetOsc0Mode
+                0x00002f64       0x24 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x00002f64                CLOCK_HAL_SetOsc0Mode
  .text.CLOCK_HAL_SetPbeMode
-                0x00002fd8       0x88 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal_modes.c.obj)
-                0x00002fd8                CLOCK_HAL_SetPbeMode
+                0x00002f88       0x88 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal_modes.c.obj)
+                0x00002f88                CLOCK_HAL_SetPbeMode
  .text.OSC_HAL_SetCapacitor
-                0x00003060        0xe ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_osc_hal.c.obj)
-                0x00003060                OSC_HAL_SetCapacitor
- *fill*         0x0000306e        0x2 
+                0x00003010        0xe ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_osc_hal.c.obj)
+                0x00003010                OSC_HAL_SetCapacitor
+ *fill*         0x0000301e        0x2 
  .text.CLOCK_HAL_SetOutDiv
-                0x00003070       0x1c ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_sim_hal_MKL46Z4.c.obj)
-                0x00003070                CLOCK_HAL_SetOutDiv
+                0x00003020       0x1c ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_sim_hal_MKL46Z4.c.obj)
+                0x00003020                CLOCK_HAL_SetOutDiv
  .text.UART_HAL_SetBaudRate
-                0x0000308c       0x34 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
-                0x0000308c                UART_HAL_SetBaudRate
+                0x0000303c       0x34 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
+                0x0000303c                UART_HAL_SetBaudRate
  .text.UART_HAL_SetParityMode
-                0x000030c0       0x1e ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
-                0x000030c0                UART_HAL_SetParityMode
+                0x00003070       0x1e ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
+                0x00003070                UART_HAL_SetParityMode
  .text.UART_HAL_SendDataPolling
-                0x000030de       0x22 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
-                0x000030de                UART_HAL_SendDataPolling
+                0x0000308e       0x22 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
+                0x0000308e                UART_HAL_SendDataPolling
  .text.UART_HAL_ReceiveDataPolling
-                0x00003100       0x38 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
-                0x00003100                UART_HAL_ReceiveDataPolling
- .text.abs      0x00003138        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-abs.o)
-                0x00003138                abs
- .text.__errno  0x00003140        0xc /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-errno.o)
-                0x00003140                __errno
- .text.exit     0x0000314c       0x2c /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
-                0x0000314c                exit
+                0x000030b0       0x38 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_uart_hal.c.obj)
+                0x000030b0                UART_HAL_ReceiveDataPolling
+ .text.abs      0x000030e8        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-abs.o)
+                0x000030e8                abs
+ .text.__errno  0x000030f0        0xc /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-errno.o)
+                0x000030f0                __errno
+ .text.exit     0x000030fc       0x2c /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-exit.o)
+                0x000030fc                exit
  .text.__libc_init_array
-                0x00003178       0x4c /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
-                0x00003178                __libc_init_array
- .text.malloc   0x000031c4       0x14 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-malloc.o)
-                0x000031c4                malloc
- .text.free     0x000031d8       0x14 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-malloc.o)
-                0x000031d8                free
- .text.memcpy   0x000031ec       0x12 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy-stub.o)
-                0x000031ec                memcpy
- .text.memset   0x000031fe       0x10 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
-                0x000031fe                memset
- *fill*         0x0000320e        0x2 
- .text._free_r  0x00003210       0x98 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-nano-freer.o)
-                0x00003210                _free_r
+                0x00003128       0x4c /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-init.o)
+                0x00003128                __libc_init_array
+ .text.malloc   0x00003174       0x14 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-malloc.o)
+                0x00003174                malloc
+ .text.free     0x00003188       0x14 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-malloc.o)
+                0x00003188                free
+ .text.memcpy   0x0000319c       0x12 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000319c                memcpy
+ .text.memset   0x000031ae       0x10 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-memset.o)
+                0x000031ae                memset
+ *fill*         0x000031be        0x2 
+ .text._free_r  0x000031c0       0x98 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-nano-freer.o)
+                0x000031c0                _free_r
  .text._malloc_r
-                0x000032a8       0xc0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-nano-mallocr.o)
-                0x000032a8                _malloc_r
- .text._sbrk_r  0x00003368       0x24 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-sbrkr.o)
-                0x00003368                _sbrk_r
+                0x00003258       0xc0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x00003258                _malloc_r
+ .text._sbrk_r  0x00003318       0x24 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-sbrkr.o)
+                0x00003318                _sbrk_r
  .text.__malloc_lock
-                0x0000338c        0x2 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-mlock.o)
-                0x0000338c                __malloc_lock
+                0x0000333c        0x2 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-mlock.o)
+                0x0000333c                __malloc_lock
  .text.__malloc_unlock
-                0x0000338e        0x2 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-mlock.o)
-                0x0000338e                __malloc_unlock
- .text._exit    0x00003390        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
-                0x00003390                _exit
+                0x0000333e        0x2 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-mlock.o)
+                0x0000333e                __malloc_unlock
+ .text._exit    0x00003340        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libnosys.a(_exit.o)
+                0x00003340                _exit
  *(.rodata)
- .rodata        0x00003394        0xc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
+ .rodata        0x00003344        0xc CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c.obj
  *(.rodata*)
  .rodata.str1.1
-                0x000033a0       0x65 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x00003350       0x58 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
  .rodata.str1.1
-                0x00003405        0x5 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
+                0x000033a8        0x5 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/tasks.c.obj
  .rodata.str1.1
-                0x0000340a        0x8 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+                0x000033ad        0x8 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/FreeRTOS/src/timers.c.obj
+ *fill*         0x000033b5        0x1 
  .rodata.g_defaultClockConfigRun
-                0x00003412       0x14 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
-                0x00003412                g_defaultClockConfigRun
- *fill*         0x00003426        0x2 
+                0x000033b6       0x14 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/board.c.obj
+                0x000033b6                g_defaultClockConfigRun
+ *fill*         0x000033ca        0x2 
  .rodata.g_oscBase
-                0x00003428        0x4 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager_common.c.obj)
-                0x00003428                g_oscBase
+                0x000033cc        0x4 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_manager_common.c.obj)
+                0x000033cc                g_oscBase
  .rodata.portGateTable
-                0x0000342c        0x5 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x000033d0        0x5 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
  .rodata.uartGateTable
-                0x00003431        0x3 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
+                0x000033d5        0x3 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_clock_MKL46Z4.c.obj)
  .rodata.g_lptmrBase
-                0x00003434        0x4 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lptmr_common.c.obj)
-                0x00003434                g_lptmrBase
+                0x000033d8        0x4 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_lptmr_common.c.obj)
+                0x000033d8                g_lptmrBase
  .rodata.fllFactorTable.5344
-                0x00003438       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
+                0x000033dc       0x10 ../../../../../lib/ksdk_platform_lib/armgcc/KL46Z4/release/libksdk_platform.a(fsl_mcg_hal.c.obj)
  .rodata._global_impure_ptr
-                0x00003448        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
-                0x00003448                _global_impure_ptr
+                0x000033ec        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/libc_nano.a(lib_a-impure.o)
+                0x000033ec                _global_impure_ptr
  *(.glue_7)
- .glue_7        0x0000344c        0x0 linker stubs
+ .glue_7        0x000033f0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000344c        0x0 linker stubs
+ .glue_7t       0x000033f0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000344c        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .eh_frame      0x000033f0        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
  *(.init)
- .init          0x0000344c        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
-                0x0000344c                _init
- .init          0x00003450        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .init          0x000033f0        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x000033f0                _init
+ .init          0x000033f4        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
  *(.fini)
- .fini          0x00003458        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
-                0x00003458                _fini
- .fini          0x0000345c        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
-                0x00003464                . = ALIGN (0x4)
+ .fini          0x000033fc        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x000033fc                _fini
+ .fini          0x00003400        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x00003408                . = ALIGN (0x4)
 
-.vfp11_veneer   0x00003464        0x0
- .vfp11_veneer  0x00003464        0x0 linker stubs
+.vfp11_veneer   0x00003408        0x0
+ .vfp11_veneer  0x00003408        0x0 linker stubs
 
-.v4_bx          0x00003464        0x0
- .v4_bx         0x00003464        0x0 linker stubs
+.v4_bx          0x00003408        0x0
+ .v4_bx         0x00003408        0x0 linker stubs
 
-.iplt           0x00003464        0x0
- .iplt          0x00003464        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+.iplt           0x00003408        0x0
+ .iplt          0x00003408        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00003464        0x8
-                0x00003464                __exidx_start = .
+.ARM            0x00003408        0x8
+                0x00003408                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x00003464        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
-                0x0000346c                __exidx_end = .
+ .ARM.exidx     0x00003408        0x8 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x00003410                __exidx_end = .
 
-.rel.dyn        0x0000346c        0x0
- .rel.iplt      0x0000346c        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+.rel.dyn        0x00003410        0x0
+ .rel.iplt      0x00003410        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
 
-.ctors          0x0000346c        0x0
-                0x0000346c                __CTOR_LIST__ = .
+.ctors          0x00003410        0x0
+                0x00003410                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x0000346c                __CTOR_END__ = .
+                0x00003410                __CTOR_END__ = .
 
-.dtors          0x0000346c        0x0
-                0x0000346c                __DTOR_LIST__ = .
+.dtors          0x00003410        0x0
+                0x00003410                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x0000346c                __DTOR_END__ = .
+                0x00003410                __DTOR_END__ = .
 
-.preinit_array  0x0000346c        0x0
-                0x0000346c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00003410        0x0
+                0x00003410                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0000346c                PROVIDE (__preinit_array_end, .)
+                0x00003410                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x0000346c        0x4
-                0x0000346c                PROVIDE (__init_array_start, .)
+.init_array     0x00003410        0x4
+                0x00003410                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x0000346c        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
-                0x00003470                PROVIDE (__init_array_end, .)
+ .init_array    0x00003410        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+                0x00003414                PROVIDE (__init_array_end, .)
 
-.fini_array     0x00003470        0x4
+.fini_array     0x00003414        0x4
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x00003470        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .fini_array    0x00003414        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x00003474                __etext = .
-                0x00003474                __DATA_ROM = .
+                0x00003418                __etext = .
+                0x00003418                __DATA_ROM = .
 
 .mtb            0x1fffe000        0x0
                 0x1fffe000                . = ALIGN (0x8)
@@ -1534,7 +1538,7 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
                 0x00000000                __VECTOR_RAM = DEFINED (__ram_vector_table__)?__VECTOR_RAM__:ORIGIN (m_interrupts)
                 0x00000000                __RAM_VECTOR_TABLE_SIZE_BYTES = DEFINED (__ram_vector_table__)?(__interrupts_ram_end__ - __interrupts_ram_start__):0x0
 
-.data           0x1fffe000       0x7c load address 0x00003474
+.data           0x1fffe000       0x7c load address 0x00003418
                 0x1fffe000                . = ALIGN (0x4)
                 0x1fffe000                __DATA_RAM = .
                 0x1fffe000                __data_start__ = .
@@ -1563,14 +1567,14 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
  .jcr           0x1fffe078        0x4 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
                 0x1fffe07c                . = ALIGN (0x4)
                 0x1fffe07c                __data_end__ = .
-                0x000034f0                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x00003494                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
                 0x00040000                text_end = (ORIGIN (m_text) + LENGTH (m_text))
                 0x00000001                ASSERT ((__DATA_END <= text_end), region m_text overflowed with text and data)
 
-.igot.plt       0x1fffe07c        0x0 load address 0x000034f0
+.igot.plt       0x1fffe07c        0x0 load address 0x00003494
  .igot.plt      0x1fffe07c        0x0 /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
 
-.bss            0x1fffe07c      0x4c0 load address 0x000034f0
+.bss            0x1fffe07c      0x4c0 load address 0x00003494
                 0x1fffe07c                . = ALIGN (0x4)
                 0x1fffe07c                __START_BSS = .
                 0x1fffe07c                __bss_start__ = .
@@ -1591,29 +1595,28 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
  *fill*         0x1fffe126        0x2 
  .bss.T1v       0x1fffe128        0x4 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x1fffe128                T1v
- .bss.m_status  0x1fffe12c        0x6 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+ .bss.m_status  0x1fffe12c        0x7 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x1fffe12c                m_status
  .bss.lbPressed
-                0x1fffe132        0x1 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x1fffe132                lbPressed
- *fill*         0x1fffe133        0x1 
+                0x1fffe133        0x1 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x1fffe133                lbPressed
  .bss.Tv        0x1fffe134        0x4 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x1fffe134                Tv
  .bss.T         0x1fffe138       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x1fffe138                T
  .bss.baseline  0x1fffe178        0x1 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x1fffe178                baseline
- .bss.X         0x1fffe179       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x1fffe179                X
- .bss.Y         0x1fffe1b9       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x1fffe1b9                Y
- .bss.Z         0x1fffe1f9       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x1fffe1f9                Z
- .bss.T1        0x1fffe239       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x1fffe239                T1
- *fill*         0x1fffe279        0x1 
- .bss.Zv        0x1fffe27a        0x2 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
-                0x1fffe27a                Zv
+ .bss.Y         0x1fffe179       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x1fffe179                Y
+ .bss.Z         0x1fffe1b9       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x1fffe1b9                Z
+ .bss.T1        0x1fffe1f9       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x1fffe1f9                T1
+ *fill*         0x1fffe239        0x1 
+ .bss.Zv        0x1fffe23a        0x2 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x1fffe23a                Zv
+ .bss.X         0x1fffe23c       0x40 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
+                0x1fffe23c                X
  .bss.lightBaseline
                 0x1fffe27c        0x2 CMakeFiles/hello_world.dir/home/james/Downloads/KSDK_1.3.0/examples/frdmkl46z/demo_apps/hello_world/main.c.obj
                 0x1fffe27c                lightBaseline
@@ -1697,7 +1700,7 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
                 0x1fffe53c                __bss_end__ = .
                 0x1fffe53c                __END_BSS = .
 
-.heap           0x1fffe53c     0x2004 load address 0x000039b0
+.heap           0x1fffe53c     0x2004 load address 0x00003954
                 0x1fffe540                . = ALIGN (0x8)
  *fill*         0x1fffe53c        0x4 
                 0x1fffe540                __end__ = .
@@ -1707,7 +1710,7 @@ LOAD /home/james/Downloads/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-
  *fill*         0x1fffe540     0x2000 
                 0x20000540                __HeapLimit = .
 
-.stack          0x20000540     0x2000 load address 0x000059b4
+.stack          0x20000540     0x2000 load address 0x00005958
                 0x20000540                . = ALIGN (0x8)
                 0x20002540                . = (. + STACK_SIZE)
  *fill*         0x20000540     0x2000 

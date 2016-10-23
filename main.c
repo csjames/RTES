@@ -61,6 +61,7 @@ typedef struct {
    uint8_t y;
    uint8_t scroll;
    bool scrollmode;
+   bool handOn;
    /* declare as many members as desired, but the entire structure size must be known to the compiler. */
 } mouse_status;
 
@@ -83,9 +84,8 @@ uint32_t calibrate_light_sensor(){
     total += light_sensor_read();
     sleep(5000);
   }
-  return total;
+  return total/64;
 }
-
 
 void scrollmodeCheck(){
   uint8_t lBtn = PTC->PDIR & (1U<<LEFT_BTN);
@@ -107,6 +107,18 @@ void scrollmodeCheck(){
   return;
 }
 
+void handOnCheck(){
+  uint16_t light_intensity = light_sensor_read();
+  // PRINTF("%d\t%d\r\n",light_intensity,lightBaseline);
+  if (light_intensity > lightBaseline + 2500) {
+    m_status.handOn = true;
+    PRINTF("HAND ON\r\n");
+  } else{
+    PRINTF("HAND OFF\r\n");
+  }
+  return;
+}
+
 //emit every 8ms
 static void mouseDataTask( void *pvParameters ){
 
@@ -119,6 +131,7 @@ static void mouseDataTask( void *pvParameters ){
   	vTaskDelayUntil( &xLastWakeTime, 8 / portTICK_PERIOD_MS);
 
     scrollmodeCheck();
+    handOnCheck();
 
     Xv -= X[i]; Yv -= Y[i]; Zv -= Z[i]; Lv -= L[i]; Tv -= T[i]; T1v -= T1[i];
 
@@ -137,7 +150,7 @@ static void mouseDataTask( void *pvParameters ){
 
     i++; i%=size;
 
-    PRINTF("x:%d\ty:%d\tz:%d\tl:%d\t\tt:%d\tt1:%d\r\n",Xv/size,Yv/size,Zv/size,Lv/size, Tv/size, T1v/size);
+    // PRINTF("x:%d\ty:%d\tz:%d\tl:%d\t\tt:%d\tt1:%d\r\n",Xv/size,Yv/size,Zv/size,Lv/size, Tv/size, T1v/size);
 
     if (abs(Tv - T1v) >= 3*size){
       uint8_t direction;
@@ -176,8 +189,8 @@ int main (void)
     touch_sensor_init();
     init_i2c();
 
-    //green
-    PTE -> PDOR |= (1U << 29U);
+    //calibration of light sensor fails otherwise!
+    PTE -> PDOR &= ~(1U << 29U);
     PTD -> PDOR &= ~(1U << 5U);
 
     PRINTF("I2c initialized\r\n");
@@ -186,11 +199,9 @@ int main (void)
     baseline1 = calibrate_touch_sensor(10);
     lightBaseline = calibrate_light_sensor();
 
-    //try repeated calibration as someone was touching sensor ffs. (not good way of doing it.)
-    if (abs(baseline - baseline1) > 2){
-      baseline = calibrate_touch_sensor(9);
-      baseline1 = calibrate_touch_sensor(10);
-    }
+    //green as we start in click mode
+    PTE -> PDOR |= (1U << 29U);
+    PTD -> PDOR &= ~(1U << 5U);
 
     PRINTF("TSI calibrated\r\n");
 
