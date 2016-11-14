@@ -209,6 +209,8 @@ public class MainActivity extends AppCompatActivity {
                     serialDevice.close();
                     emulator.getTermSession().reset();
                     Toast.makeText(MainActivity.this, "Disconnected", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "You arent connected", Toast.LENGTH_SHORT).show();
                 }
             }
         });

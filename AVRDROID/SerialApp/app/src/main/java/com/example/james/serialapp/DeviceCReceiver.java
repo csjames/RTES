@@ -17,7 +17,7 @@ public class DeviceCReceiver extends BroadcastReceiver{
 
     private MainActivity m;
 
-    private String cableDC = "FTDI Cable Connected";
+    private String cableDC = "USB Serial Cable Connected";
 
     private ArrayList<ConnectionInfo> tabs = new ArrayList<>();
 

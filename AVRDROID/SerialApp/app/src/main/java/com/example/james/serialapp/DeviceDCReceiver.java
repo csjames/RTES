@@ -18,7 +18,7 @@ public class DeviceDCReceiver extends BroadcastReceiver{
 
     MainActivity m;
 
-    String cableDC = "FTDI Cable Disconnected";
+    String cableDC = "USB Serial Cable Disconnected";
 
     private ArrayList<ConnectionInfo> tabs = new ArrayList<>();
 
