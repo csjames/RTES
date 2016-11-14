@@ -1,0 +1,20 @@
+<resources>
+
+
+<string name="app_name">SerialApp</string>
+<string name="hello_world">Hello world!</string>
+<string name="action_settings">Settings</string>
+<string name="serial_port">Serial Port</string>
+
+<!-- Settings string -->
+<string name="uart_settings">UART Settings</string>
+<string name="baud_rate">Baud Rate</string>
+<string name="data_bits">Data Bits</string>
+<string name="stop_bits">Stop_Bits</string>
+<string name="parity">Parity</string>
+<string name="flow_control">Flow Control</string>
+
+<string name="drawer_open">Open</string>
+<string name="drawer_close">Close</string>
+
+</resources>

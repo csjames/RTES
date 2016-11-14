@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_margin="8dp"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/fuses">
+
+        <TextView
+            android:text="Low Fuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdef"
+                android:hint="please use hex"
+                android:maxLength="2"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/lfuse" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lfusec"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:text="High Fuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdef"
+                android:hint="omit if not programming"
+                android:maxLength="2"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/hfuse" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hfusec"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:text="Extended Fuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdef"
+                android:hint="fuses are dangerous"
+                android:maxLength="2"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/efuse" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/efusec"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fuses"
+        android:layout_above="@+id/buttonContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:id="@+id/testOutput"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttonContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="Burn Fuses"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/burnFuses"/>
+
+        <Button
+            android:text="Read Fuses"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/readFuses"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

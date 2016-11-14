@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="@string/uart_settings"
+        android:title="@string/uart_settings">
+
+        <ListPreference
+            android:key="@string/baud_rate"
+            android:title="@string/baud_rate"
+            android:summary="%s"
+            android:entries="@array/Baud_Rate"
+            android:entryValues="@array/Baud_Rate"
+            android:defaultValue="9600"/>
+
+        <ListPreference
+            android:key="@string/data_bits"
+            android:title="@string/data_bits"
+            android:summary="%s"
+            android:entries="@array/Data_Bits"
+            android:entryValues="@array/Data_Bits"
+            android:defaultValue="8"/>
+
+        <ListPreference
+            android:key="@string/stop_bits"
+            android:title="@string/stop_bits"
+            android:summary="%s"
+            android:entries="@array/Stop_Bits"
+            android:entryValues="@array/Stop_Bits"
+            android:defaultValue="1"/>
+
+        <ListPreference
+            android:key="@string/parity"
+            android:title="@string/parity"
+            android:summary="%s"
+            android:entries="@array/Parity"
+            android:entryValues="@array/Parity"
+            android:defaultValue="none"/>
+
+        <ListPreference
+            android:key="@string/flow_control"
+            android:title="@string/flow_control"
+            android:summary="%s"
+            android:entries="@array/Flow_Control"
+            android:entryValues="@array/Flow_Control"
+            android:defaultValue="none"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
