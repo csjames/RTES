@@ -27,10 +27,8 @@ Will add links to this repo later
 You will always want the android ndk as it contains build tools e.g. gcc, g++ for the android platform.
 
 NDK is THE Native Development Kit for android. If you want to interface with precompiled .so's, or compile C|C++ to run on 
-android, use the NDK (im sure there are other ways but this is canonical) <- android studio does a good job of managing
-this for you surprisingly! just give it a makefile and add it to build phases and get happy
+android, use the NDK (im sure there are other ways but this is canonical) <- android studio does a good job of managing this for you surprisingly! just give it a ndk build script and add it to build phases and get happy
 
-https://github.com/tladyman/avrdude-android You can alternatively use this. I have put in a pull request for platform
 independant executables but the guy hasnt pushed since 2011 so dont hold your breath.
 
 When you compile, you will have to set your environment variables like so : *** There is a complete script in avrdude_android ***
