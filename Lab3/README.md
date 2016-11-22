@@ -36,6 +36,27 @@ sudo echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
 # Run radvd daemon.
 sudo systemctl radvd start
 ```
+## Test Conversation
+
+``` bash 
+# Run on both devices
+echo 1 > /sys/kernel/debug/bluetooth/6lowpan_enable
+
+# master 
+# advertise
+hciconfig hci0 leadv
+
+# slave
+hcitool lecc XX:XX:XX:XX:XX:XX
+
+# master or slave
+echo “connect XX:XX:XX:XX:XX:XX 1” > /sys/kernel/debug/bluetooth/6lowpan_control
+```
+
+At this stage the `ifconfig` command should reveal interface bt0, and you can now ping shit
+
+Try `tail -f /var/log/radvd.log` to see whats going on.
+
 ### Useful tools
 
 hciconfig hci0 reset # get into a known state
