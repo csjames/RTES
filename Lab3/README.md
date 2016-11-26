@@ -34,7 +34,7 @@ interface bt0
 # Set IPv6 forwarding
 sudo echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
 # Run radvd daemon.
-sudo systemctl radvd start
+sudo systemctl start radvd
 ```
 ## Test Conversation
 
