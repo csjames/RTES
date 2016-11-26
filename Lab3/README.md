@@ -59,7 +59,7 @@ Try `tail -f /var/log/radvd.log` to see whats going on.
 
 ### Useful tools
 
-hciconfig hci0 reset # get into a known state
-hcitool scanle # start looking around
+`hciconfig hci0 reset # get into a known state`
+`hcitool lescan # start looking around`
 
 # Clients
