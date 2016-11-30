@@ -9,8 +9,7 @@ Helpful source : [Nordic Semiconductor ping6 guide...](http://infocenter.nordics
 These are only available post kernel 3.1 -- shouldn't be a problem for most
 
 ``` bash
-  sudo pacman -S bluez bluez-utils
-  sudo modprobe bluetooth
+  sudo pacman -S bluez bluez-utils # or apt or whatever :D 
   sudo modprobe bluetooth_6lowpan
 ```
 
