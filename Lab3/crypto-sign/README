@@ -1,0 +1,9 @@
+Tom Eccles tde1g14@soton.ac.uk
+
+from-libsodium -  Stripped down version of libsodium to just do signing.
+
+hosted - Stuff that can only be run in a hosted environment
+
+hosted/from-libsodium - Stuff from libsodium for generating keypairs. We cannot do this on embedded hardware because we need stong random numbers
+
+libsodium lives at https://github.com/jedisct1/libsodium
