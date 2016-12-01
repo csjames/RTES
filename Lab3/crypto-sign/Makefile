@@ -7,12 +7,13 @@ AR_ARM := $(AR_HOSTED)
 
 SODIUM_DIR := from-libsodium
 HOSTED_DIR := hosted
+EMBED_DIR  := embedded
 
 WARNINGS := -Wall 
 INCLUDE_DIRS := $(SODIUM_DIR)/include
 # don't add optimisation flags on crypto or we might not be zeroing all the memory that we think we are
 CFLAGS := -std=c99 $(WARNINGS) -I $(SODIUM_DIR)/include
-CFLAGS_EMBED := 
+CFLAGS_EMBED := --specs=nosys.specs -mthumb -mtune=cortex-m0plus
 
 # common libsodium code
 SODIUM_SRC := $(shell find $(SODIUM_DIR) -type f -name "*.c")
@@ -26,10 +27,20 @@ HOSTED_SRC := $(shell find $(HOSTED_DIR)/from-libsodium -type f -name "*.c")
 HOSTED_OBJ := $(patsubst %.c,%_hosted.o,$(HOSTED_SRC))
 HOSTED_DEP := $(shell find $(HOSTED_DIR) -type f -name "*_hosted.d")
 
+# embedded specific stuff. More hardcoded than the others because of the file generation
+EMBED_SRC := $(shell find $(EMBED_DIR) -type f -name "*.c")
+
 .PHONY: clean test all
 
-all: libminisodium_embedded.a libminisodium_hosted.a hosted-test gen-keypair-files
+all: libminisodium_embedded.a libminisodium_hosted.a hosted-test gen-keypair-files embedded-test.elf
 	@echo "Made all"
+
+embedded-test.elf: libminisodium_embedded.a gen-keypair-files $(EMBED_SRC)
+	@./gen-keypair-files
+	@mv keypair_pk.c keypair_sk.c keypair_pk.h keypair_sk.h $(EMBED_DIR)
+	@sync
+	@$(CC_ARM) $(CFLAGS) $(CFLAGS_EMBED) $(EMBED_DIR)/test.c $(EMBED_DIR)/keypair_pk.c $(EMBED_DIR)/keypair_sk.c -o $@ -L. -lminisodium_embedded
+	@rm $(EMBED_DIR)/keypair_pk.c $(EMBED_DIR)/keypair_sk.c $(EMBED_DIR)/keypair_pk.h $(EMBED_DIR)/keypair_sk.h
 
 gen-keypair-files: $(HOSTED_OBJ) $(HOSTED_DIR)/gen_keypair_files.c libminisodium_hosted.a
 	@$(CC_HOSTED) $(CFLAGS) $^ -o $@ -L. -lminisodium_hosted
@@ -47,7 +58,7 @@ libminisodium_embedded.a: $(SODIUM_EMBED_OBJ)
 	@$(AR_ARM) r $@ $?
 
 clean:
-	-@rm $(wildcard $(SODIUM_HOSTED_OBJ) $(SODIUM_HOSTED_DEP) libminisodium_hosted.a $(HOSTED_OBJ) $(HOSTED_DEP) hosted-test $(SODIUM_EMBED_OBJ) $(SODIUM_EMBED_DEP) libminisodium_embedded.a hosted/test_hosted.o gen-keypair-files keypair_*) > /dev/null 2>&1; true
+	-@rm $(wildcard $(SODIUM_HOSTED_OBJ) $(SODIUM_HOSTED_DEP) libminisodium_hosted.a $(HOSTED_OBJ) $(HOSTED_DEP) hosted-test $(SODIUM_EMBED_OBJ) $(SODIUM_EMBED_DEP) libminisodium_embedded.a hosted/test_hosted.o gen-keypair-files keypair_* embedded-test.elf) > /dev/null 2>&1; true
 
 # include automatically generated dependency files (they might not exist yet)
 -include $(SODIUM_EMBED_DEP)

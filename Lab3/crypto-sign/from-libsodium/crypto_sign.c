@@ -32,19 +32,6 @@ crypto_sign_primitive(void)
 }
 
 int
-crypto_sign_seed_keypair(unsigned char *pk, unsigned char *sk,
-                         const unsigned char *seed)
-{
-    return crypto_sign_ed25519_seed_keypair(pk, sk, seed);
-}
-
-int
-crypto_sign_keypair(unsigned char *pk, unsigned char *sk)
-{
-    return crypto_sign_ed25519_keypair(pk, sk);
-}
-
-int
 crypto_sign(unsigned char *sm, unsigned long long *smlen_p,
             const unsigned char *m, unsigned long long mlen,
             const unsigned char *sk)
