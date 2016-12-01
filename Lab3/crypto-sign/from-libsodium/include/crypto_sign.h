@@ -41,13 +41,6 @@ SODIUM_EXPORT
 const char *crypto_sign_primitive(void);
 
 SODIUM_EXPORT
-int crypto_sign_seed_keypair(unsigned char *pk, unsigned char *sk,
-                             const unsigned char *seed);
-
-SODIUM_EXPORT
-int crypto_sign_keypair(unsigned char *pk, unsigned char *sk);
-
-SODIUM_EXPORT
 int crypto_sign(unsigned char *sm, unsigned long long *smlen_p,
                 const unsigned char *m, unsigned long long mlen,
                 const unsigned char *sk);

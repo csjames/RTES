@@ -13,7 +13,7 @@ int main(int arc, char** argv) {
 
     uint8_t pk[crypto_sign_PUBLICKEYBYTES];
     uint8_t sk[crypto_sign_SECRETKEYBYTES];
-    crypto_sign_keypair(pk, sk);
+    crypto_sign_ed25519_keypair(pk, sk);
 
     unsigned char signature[crypto_sign_BYTES];
     unsigned long long signature_length;
