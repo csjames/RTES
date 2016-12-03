@@ -8,7 +8,7 @@
 
 // TODO: gpio or turn on an LED or something?
 void assert(bool p) {
-    if (p) {
+    if (!p) {
         while(true);
     }
 }
