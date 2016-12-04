@@ -8,6 +8,5 @@ What all the directories are:
 ./from-libsodium -  Stripped down version of libsodium to just do signing.
 ./hosted - Stuff that can only be run in a hosted environment
 ./hosted/from-libsodium - Stuff from libsodium for generating keypairs. We cannot do this on embedded hardware because we need stong random numbers
-
-
+./embedded - an *unfinished* test program because I don't have any hardware to play with
 

@@ -14,15 +14,14 @@
 #include <errno.h>
 
 int main(int arc, char** argv) {
-    puts("Writing a new keypair to keypair.c and keypair.h\n");
+    puts("Writing a new keypair to keypair_pk.c and keypair_sk.c\n");
 
     // open files
     const int flags = O_WRONLY | O_CREAT | O_EXCL;
     const mode_t mode = S_IRUSR | S_IWUSR; // rw-------
 
     const int header_pk_fd = open("keypair_pk.h", flags, mode);
-    if (header_pk_fd == -1) {
-        puts("Failed to open the pk headder file\nDid you remember to delete the old files?");
+    if (header_pk_fd == -1) { puts("Failed to open the pk headder file\nDid you remember to delete the old files?");
         return EXIT_FAILURE;
     }
 
@@ -45,12 +44,23 @@ int main(int arc, char** argv) {
     }
 
     // write header files
-    const char* header_pk_buf = "#ifndef KEYPAIR_PK_H\n#define KEYPAIR_PK_H\n\n#include<stdint.h>\n\nconst size_t public_key_bytes = 32;\nextern uint8_t pk[public_key_bytes];\n\n#endif\n";
+    const char* header_pk_buf = "#ifndef KEYPAIR_PK_H\n#define KEYPAIR_PK_H\n\n#include <stdint.h>\n#include <stddef.h>\n\nconst size_t public_key_bytes = 32;\nextern uint8_t pk[];\n\n#endif\n";
     const size_t header_pk_buf_len = strlen(header_pk_buf);
     
     if (write(header_pk_fd, (const void*) header_pk_buf, header_pk_buf_len) != header_pk_buf_len) {
         int err = errno;
-        printf("Failed to write to the pk header file. errno=%i\n", err); return EXIT_FAILURE; } const char* header_sk_buf = "#ifndef KEYPAIR_SK_H\n#define KEYPAIR_SK_H\n\n#include<stdint.h>\n\nconst size_t secret_key_bytes = 64;\nextern uint8_t sk[secret_key_bytes];\n\n#endif\n"; const size_t header_sk_buf_len = strlen(header_sk_buf); if (write(header_sk_fd, (const void*) header_sk_buf, header_sk_buf_len) != header_sk_buf_len) { int err = errno; printf("Failed to write to the sk header file. errno=%i\n", err); return EXIT_FAILURE;
+        printf("Failed to write to the pk header file. errno=%i\n", err); 
+        return EXIT_FAILURE; 
+    } 
+
+    const char* header_sk_buf = "#ifndef KEYPAIR_SK_H\n#define KEYPAIR_SK_H\n\n#include <stdint.h>\n#include <stddef.h>\n\nconst size_t secret_key_bytes = 64;\nextern uint8_t sk[];\n\n#endif\n"; 
+
+    const size_t header_sk_buf_len = strlen(header_sk_buf); 
+ 
+    if (write(header_sk_fd, (const void*) header_sk_buf, header_sk_buf_len) != header_sk_buf_len) { 
+        int err = errno; 
+        printf("Failed to write to the sk header file. errno=%i\n", err); 
+        return EXIT_FAILURE;
     }
 
     // generate keys
@@ -59,7 +69,7 @@ int main(int arc, char** argv) {
     crypto_sign_ed25519_keypair(pk, sk);	 
 
     // write pk source file
-    const char* source_pk_start_buf = "#include <stdint.h>\n\nconst size_t public_key_bytes = 32;\n\nuint8_t pk[] = {";
+    const char* source_pk_start_buf = "#include <stdint.h>\n\nuint8_t pk[] = {";
     const size_t source_pk_start_len = strlen(source_pk_start_buf);
 
     if (write(source_pk_fd, (const void*) source_pk_start_buf, source_pk_start_len) != source_pk_start_len) {
@@ -97,7 +107,7 @@ int main(int arc, char** argv) {
     }
 
     // write sk source file
-    const char* source_sk_start_buf = "#include <stdint.h>\n\nconst size_t secret_key_bytes = 64;\n\nuint8_t sk[] = {";
+    const char* source_sk_start_buf = "#include <stdint.h>\n\nuint8_t sk[] = {";
     const size_t source_sk_start_len = strlen(source_sk_start_buf);
 
     if (write(source_sk_fd, (const void*) source_sk_start_buf, source_sk_start_len) != source_sk_start_len) {
